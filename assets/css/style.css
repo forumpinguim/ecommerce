@@ -53,7 +53,7 @@
   /*PARTE BLACK */
   
   .dark-theme {
-    --primary-color: hsl(261, 100%, 51%);
+    --primary-color: hsl(0, 0%, 0%);
     --accent-color: hsl(0, 0%, 100%);
     --white-silver: hsl(0, 0%, 100%);
     --spanish-gray: hsl(0, 0%, 0%);
@@ -67,8 +67,7 @@
     --cultured: hsl(0, 0%, 100%);
     --white: hsl(0, 0%, 0%);
     --onyx: hsl(0, 0%, 100%);
-    --footer: hsl(273, 100%, 50%);
-  }
+    --footer: hsl(0, 2%, 12%);
     
   
   /**
