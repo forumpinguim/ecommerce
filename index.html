@@ -1,0 +1,4470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amaral Ecommerce</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="assets/css/style.css" class="css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--BOOTSTRAP ICONS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!--BOOTSTRAP ICONS-->
+
+  <!--JS ICONS-->
+  <script src="assets/js/script.js" defer ></script>
+  <!--JS ICONS-->
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Curtiu a página? 🤩</h3>
+
+            <p class="newsletter-desc">
+              Então já sabe, <b>compartilha</b> o link da page com os amigos e familiares para ajudar todo mundo com essas ofertas imperdíveis 🌟
+            </p>
+            <br>
+            <p>amaraldzn.github.io/ecommerce/</p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Mande-me um email" required>
+
+          <button type="submit" class="btn-newsletter">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <a href="https://amzn.to/3ReQdFW">
+        <img src="./assets/images/anunciopapainoelofertas.png" alt="Rose Gold Earrings" width="80" height="70">
+      </a>
+      
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Ofertão de última hora!!
+      </p>
+
+      <p class="toast-title">
+        Eletrônicos super baratos para o natal
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+  
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100094559876343" class="social-link" id="facebookIcon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/AmaralDzn" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/amaraldsn/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/natanael-amaral-a8661b264/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>O QUE?!!</b>
+            NÃO FIQUE ESPERANDO, COMPRE JÁ!!
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+          <img src="assets/images/moon.svg" id="icon">
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+        <img class="logodabixiga" src="assets/images/logo/amaraldsnlogo.png" id="logo" alt="Anon's logo" width="120" height="120" style="margin: 0 0 auto 133px;">
+        </a>
+
+
+        <div class="header-search-container">
+          
+          <input type="search" name="search" class="search-field" id="searchInput" placeholder="Não disponível no momento...">
+          <button class="search-btn" onclick="performSearch()">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <a href="https://amzn.to/4aoQvTA">
+              <i class="bi bi-cart-fill custom-icon"></i>
+            </a>
+          </button>
+
+          <button class="action-btn">
+            <a href="https://amaraldzn.github.io/">
+              <i class="bi bi-rocket-fill custom-icon2"></i>
+            <span class="count">10</span>
+            </a>
+          </button>
+
+          <button class="action-btn">
+            <a href="https://amzn.to/46VxKE6">
+              <i class="bi bi-alarm-fill custom-icon3"></i>
+            <span class="count">99</span>
+            </a>
+            
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categorias</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="https://amzn.to/3R5lyuw">Periféricos</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3Rf3Wwl">Teclado</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3RgQCYi">Mouse</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3Rbt6vT">Mousepad</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/4aouxjF">Fones de ouvido</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3GzbqWg">Monitores</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3NjdpSb">
+                    <img src="assets/images/perifericosbanner.png" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="https://amzn.to/46J6zwp">Informática</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3RgnctC">PC's</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3uW077L">Notebook's</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3RgRegy">Tablet's</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3GwbjuH">Celulares</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3GEZIsZ">Hardware</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/47Hz1zU">
+                    <img src="assets/images/bannerinformatica.png" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="https://amzn.to/3tay5oQ">Eletrodomésticos</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3t9Jc1c">Cozinha</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/4aov0lV">Sala</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3NgBKbr">Varanda</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/4aaUvXp">Quarto</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3RtGRHH">Terraço</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3TbEo69">
+                    <img src="assets/images/banneletrodomesticos.png" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="https://amzn.to/3NmLTTV">Livros</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/46PAhQ8">Terror</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/46Q2zKy">Romance</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/41bBcJI">Comédia</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3uTgyC8">Drama</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/3Nhfgan">Fantasia</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="https://amzn.to/47Hz7rg">
+                    <img src="assets/images/bannerbooks.png" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Ebook</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/46NYnuz">Ação</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3Tgq2kS">Terror</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3uQSekh">Na promoção</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/41f5g7c">Comédia</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Doméstico</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/419psYd">Limpeza</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/489hfVY">Cozinha</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/486Ha0z">Eletrodomésticos</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/484QHVW">Casa</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Eletrônicos</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3uVzhN4">TV Box</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/46ReQOC">Alexa</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/47NLPF5">Fones de ouvido</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/47HzKkC">Caixa de som</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hardware</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3uQSy2t">Placa mãe</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/47NVfQN">Memória RAM</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/47HA2bc">SSD/HD</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3uJeP1U">Coller</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3RbtBGh">Placa de Vídeo</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Acessórios</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3RgBNVM">Pulseiras</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3Ry7NFh">Mochilas</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3tdl0Le">Suportes</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3ReEpDD">Relógios</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">TOP PROMOÇÕES</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3GEZWAl">NOTEBOOKS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3thONT0">FERRAMENTAS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3uMRLzn">ELETRÔNICOS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3TfyKzF">LIVROS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3NdoC72">ELETRODOMÉSTICOS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="https://amzn.to/3NhfsX9">CASA</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <img src="assets/images/moonmobile.svg" id="iconmobile">
+        
+      </button> 
+
+      <button class="action-btn">
+        <a href="https://amzn.to/4aatHqp">
+          <i class="bi bi-gift-fill"></i>
+          <span class="count">30</span>
+        </a>
+      </button>
+
+      <button class="action-btn">
+        <a href="https://amzn.to/47PP2Ut">
+          <i class="bi bi-cart-fill" ></i>
+
+          <span class="count">99</span>
+        </a>
+        
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Notebooks</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/4acqSFu" class="submenu-title">Samsung</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3RvydIQ" class="submenu-title">Lenovo</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3TjaWen" class="submenu-title">Acer</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3uYogdS" class="submenu-title">Apple</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Ferramentas</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3Tjbgd5" class="submenu-title">Genéricas</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3NiTVgN" class="submenu-title">Bosch</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/46OK7C1" class="submenu-title">Black decker</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/41ah5eR" class="submenu-title">Sparta</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Periféricos</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/4a98Una" class="submenu-title">Razer</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3GwUZcP" class="submenu-title">Logitech</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/47DFEDn" class="submenu-title">Corsair</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/4a7HqOP" class="submenu-title">SteelSeries</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Hardware</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/4aaKQ35" class="submenu-title">Intel</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/46Rm19H" class="submenu-title">AMD</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/47K6No5" class="submenu-title">Asus</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3TdQqM6" class="submenu-title">NVIDIA</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Whey Protein</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3TbvwNT" class="submenu-title">Optimum Nutrition</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/41kiFuH" class="submenu-title">Max Titanium</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3uKTYv7" class="submenu-title">Integralmedica</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3ThreVi" class="submenu-title">Dux Concentrado</a>
+            </li>
+
+          </ul>
+
+        </li> <!--fim de whey-->
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Eletro domésticos</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/47P168w" class="submenu-title">Eletrolux</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3uOz4eN" class="submenu-title">Brastemp</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3Tfpiwb" class="submenu-title">Philco</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/3uMsmpI" class="submenu-title">Consul</a>
+            </li>
+
+          </ul>
+
+        </li> <!--fim de whey-->
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">TV's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/4adIWPi" class="submenu-title">Samsung</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/4acJ4OW" class="submenu-title">Sony</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/4aaLXzN" class="submenu-title">LG</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="https://amzn.to/46Qscef" class="submenu-title">TCL</a>
+            </li>
+
+          </ul>
+
+        </li> <!--fim de whey-->
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Mais vendidos</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="https://amzn.to/3Rx8XBL" class="submenu-title">Eletrônicos</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="https://amzn.to/485wi3c" class="submenu-title">Informática</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="https://amzn.to/3sXhLI0" class="submenu-title">Esportes</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="https://amzn.to/46ND1O6" class="submenu-title">Casa</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="https://amzn.to/474icyd" class="submenu-title">Livros</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="https://amzn.to/46TvTzI" class="submenu-title">Brinquedos/Jogos</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">PROMOÇÕES RELÂMPAGO</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="https://amzn.to/4ady3gk" class="submenu-title">CLICA AQUI</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="https://amzn.to/3TfUfAt" class="submenu-title">AMAZON PRIME - ASSINE JÁ</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100094559876343" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/AmaralDzn" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/amaraldsn/" class="social-link" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/natanael-amaral-a8661b264/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+            <img src="assets/images/promocao 1 banner.png" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">MELHORES OFERTAS</p>
+              <h2 class="banner-title">VOCÊ NÃO PODE PERDER</h2>
+              <a href="https://amzn.to/3RxcVKF" class="banner-btn">Clique aqui</a>
+            </div>
+            
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="assets/images/promocao 2 banner.png" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">MELHORES OFERTAS</p>
+              <h2 class="banner-title">VOCÊ NÃO PODE PERDER</h2>
+              <a href="https://amzn.to/46UdAu5" class="banner-btn">Clique aqui</a>
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="assets/images/promocao 3 banner.png" alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+              <h2 style="margin-top: 120px;" class="banner-title">VOCÊ NÃO PODE PERDER</h2>
+              <a href="https://amzn.to/482e4zo" class="banner-btn">Clique aqui</a>
+              
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORIA - ROLAGENS DOS ICONS PEQUENOS
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="assets/images/clockiconnavigation.svg" width="25px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Relógios</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="https://amzn.to/3GED3gp" class="category-btn"> ☛
+                Veja todos ☚ ou passa pro lado para ver mais</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="assets/images/mouseiconnavigation.svg" width="35px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Mouses</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="https://amzn.to/3GucpHj" class="category-btn">Veja todos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="assets/images/headseticonnavigation.svg" width="35px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Fones de ouvido</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="https://amzn.to/3NjB9ps" class="category-btn">Veja todos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+             <img src="assets/images/laptopiconnavigation.svg" width="35px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Notebooks</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="https://amzn.to/3RvnIVY" class="category-btn">Veja todos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="assets/images/computericonnavigation.svg"
+              width="35px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Computadores</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="https://amzn.to/488487K" class="category-btn">Veja todos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+             <img src="assets/images/smartphoneiconnavigation.svg"
+             width="35px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Celulares</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="https://amzn.to/47NwCUl" class="category-btn">Veja todos</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="assets/images/printiconnavigation.svg" 
+              width="35px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Impressoras</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="https://amzn.to/46Ibdus" class="category-btn">Veja todas</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="assets/images/tviconnavigation.svg" width="35px" height="36px" alt="">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Televisões</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="https://amzn.to/3uPUNmA" class="category-btn">Veja todas</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Categoria</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/pcmenu.svg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Aparelhos eletrônicos</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3Ti35xD" class="sidebar-submenu-title">
+                      <p class="product-name">Computador</p>
+                      <data value="68" class="stock" title="Available Stock">120</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/41djPYM" class="sidebar-submenu-title">
+                      <p class="product-name">Notebook</p>
+                      <data value="46" class="stock" title="Available Stock">400</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/487JnZQ" class="sidebar-submenu-title">
+                      <p class="product-name">Tablet</p>
+                      <data value="79" class="stock" title="Available Stock">420</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4aa6cxM" class="sidebar-submenu-title">
+                      <p class="product-name">Smartphone</p>
+                      <data value="23" class="stock" title="Available Stock">190</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/bookiconmenu.svg" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Livros</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3uOZnkW" class="sidebar-submenu-title">
+                      <p class="product-name">Romance</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/47J11TZ" class="sidebar-submenu-title">
+                      <p class="product-name">Terror</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3GDh5KI" class="sidebar-submenu-title">
+                      <p class="product-name">Drama</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/47LQfw9" class="sidebar-submenu-title">
+                      <p class="product-name">Fantasia</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/desktop-peripherals-svgrepo-com.svg" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Periféricos</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46IU6J2" class="sidebar-submenu-title">
+                      <p class="product-name">Mouse</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/483KBoQ" class="sidebar-submenu-title">
+                      <p class="product-name">Teclado</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/489ilBo" class="sidebar-submenu-title">
+                      <p class="product-name">Mousepad</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/486yO99" class="sidebar-submenu-title">
+                      <p class="product-name">Impressoras</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3Nd0lh5" class="sidebar-submenu-title">
+                      <p class="product-name">Monitores</p>
+                      <data value="26" class="stock" title="Available Stock">30</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+  
+                  <div class="menu-title-flex">
+                    <img src="assets/images/gamemenu.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+  
+                    <p class="menu-title">Games e Console</p>
+                  </div>
+  
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+  
+                </button>
+  
+                <ul class="sidebar-submenu-category-list" data-accordion>
+  
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4aeEzUo" class="sidebar-submenu-title">
+                      <p class="product-name">Playstation 5</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+  
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3GB1N9n" class="sidebar-submenu-title">
+                      <p class="product-name">Playstation 4</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+  
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3GFIDiA" class="sidebar-submenu-title">
+                      <p class="product-name">Xbox Series</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+  
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4aeqTbW" class="sidebar-submenu-title">
+                      <p class="product-name">Nintendo Switch</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+  
+                </ul>
+  
+              </li> <!--FIM -->
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/hardwareiconmenu.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Hardware</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4a85gtL" class="sidebar-submenu-title">
+                      <p class="product-name">Processador</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3RxQS5J" class="sidebar-submenu-title">
+                      <p class="product-name">Memória RAM</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3GvWsQX" class="sidebar-submenu-title">
+                      <p class="product-name">HD/SSD</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3uT1zIo" class="sidebar-submenu-title">
+                      <p class="product-name">Placa Mãe</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/electronics-museum-svgrepo-com.svg" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Periféricos</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4a7PS0u" class="sidebar-submenu-title">
+                      <p class="product-name">Fone de ouvido</p>
+                      <data value="12" class="stock" title="Available Stock">12</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3uRQAPh" class="sidebar-submenu-title">
+                      <p class="product-name">Echo/Alexa</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3td4FpS" class="sidebar-submenu-title">
+                      <p class="product-name">TV Box</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4a7QdAi" class="sidebar-submenu-title">
+                      <p class="product-name">Drone</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/houseiconmenu.svg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Doméstico</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/486Vt5i" class="sidebar-submenu-title">
+                      <p class="product-name">Limpeza</p>
+                      <data value="68" class="stock" title="Available Stock">120</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/41h7bIq" class="sidebar-submenu-title">
+                      <p class="product-name">Jardim</p>
+                      <data value="46" class="stock" title="Available Stock">400</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/48ayBlC" class="sidebar-submenu-title">
+                      <p class="product-name">Casa</p>
+                      <data value="79" class="stock" title="Available Stock">420</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3RxRXuj" class="sidebar-submenu-title">
+                      <p class="product-name">Sala</p>
+                      <data value="23" class="stock" title="Available Stock">190</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/saudemenu.svg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Cuidado pessoal</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://www.amazon.com.br/gp/browse.html?node=16194414011&linkCode=sl2&tag=natanaelamara-20&linkId=b4349ba8923a7051b227aada03f04219&language=pt_BR&ref_=as_li_ss_tl" class="sidebar-submenu-title">
+                      <p class="product-name">Beleza</p>
+                      <data value="68" class="stock" title="Available Stock">120</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46Q2er1" class="sidebar-submenu-title">
+                      <p class="product-name">Cachos e Ondas</p>
+                      <data value="46" class="stock" title="Available Stock">400</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3GxmlQi" class="sidebar-submenu-title">
+                      <p class="product-name">Cuidados Pessoais</p>
+                      <data value="79" class="stock" title="Available Stock">420</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3NHsH3F" class="sidebar-submenu-title">
+                      <p class="product-name">Programa e Poupe</p>
+                      <data value="23" class="stock" title="Available Stock">190</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/acessoriosiconmenu.svg" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Acessórios</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/483XqA5" class="sidebar-submenu-title">
+                      <p class="product-name">Bolsas/Mochilas</p>
+                      <data value="50" class="stock" title="Available Stock">999</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3sYG4W1" class="sidebar-submenu-title">
+                      <p class="product-name">Tecnologia</p>
+                      <data value="48" class="stock" title="Available Stock">289</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4a7CCcf" class="sidebar-submenu-title">
+                      <p class="product-name">Viagem</p>
+                      <data value="48" class="stock" title="Available Stock">379</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3NFarYH" class="sidebar-submenu-title">
+                      <p class="product-name">Casa</p>
+                      <data value="48" class="stock" title="Available Stock">500</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/gameiconmenu.svg" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Diversão</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46LbD3b" class="sidebar-submenu-title">
+                      <p class="product-name">Brinquedos infantis</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3uYk2Ty" class="sidebar-submenu-title">
+                      <p class="product-name">Jogos</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3tbyEP5" class="sidebar-submenu-title">
+                      <p class="product-name">Consoles</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46Ilmaw" class="sidebar-submenu-title">
+                      <p class="product-name">Piscina</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/malhacaoiconmenu.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Academia</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3GyMrSN" class="sidebar-submenu-title">
+                      <p class="product-name">Whey Protein</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46JPNNr" class="sidebar-submenu-title">
+                      <p class="product-name">Roupas de academia</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3TeZb8E" class="sidebar-submenu-title">
+                      <p class="product-name">Kit Fitness</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46QcWOy" class="sidebar-submenu-title">
+                      <p class="product-name">Acessórios de academia</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li> <!--FIM -->
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/fooddrinkmenu.svg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Alimentos/Bebidas</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3uSjOxp" class="sidebar-submenu-title">
+                      <p class="product-name">Alimentos/Bebidas</p>
+                      <data value="68" class="stock" title="Available Stock">120</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46V0FYW" class="sidebar-submenu-title">
+                      <p class="product-name">Bebidas Alcoólicas</p>
+                      <data value="46" class="stock" title="Available Stock">400</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3Rh7Ogl" class="sidebar-submenu-title">
+                      <p class="product-name">Doces</p>
+                      <data value="79" class="stock" title="Available Stock">420</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/488Os3V" class="sidebar-submenu-title">
+                      <p class="product-name">Whisky</p>
+                      <data value="23" class="stock" title="Available Stock">190</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              
+
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/ferramentasmenu.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Ferramentas</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/487HfkO" class="sidebar-submenu-title">
+                      <p class="product-name">Ferramentas Elétricas</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/47N2jNr" class="sidebar-submenu-title">
+                      <p class="product-name">Ferramentas Manuais</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3GBd1uI" class="sidebar-submenu-title">
+                      <p class="product-name">Iluminação</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/4a6H4Ih" class="sidebar-submenu-title">
+                      <p class="product-name">Proteção e Segurança</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li> <!--FIM -->
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="assets/images/fashionmenu.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Moda</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/47RRJoK" class="sidebar-submenu-title">
+                      <p class="product-name">Feminina</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3Thza8H" class="sidebar-submenu-title">
+                      <p class="product-name">Masculino</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/3uRq6gK" class="sidebar-submenu-title">
+                      <p class="product-name">Bebês</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="https://amzn.to/46YGNEA" class="sidebar-submenu-title">
+                      <p class="product-name">Esportiva</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li> <!--FIM -->
+
+            </li> <!--FIM -->
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                <div class="menu-title-flex">
+                  <img src="assets/images/dogaomenu.svg" alt="clothes" class="menu-title-img" width="20"
+                    height="20">
+
+                  <p class="menu-title">Pet Shop</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list" data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="https://amzn.to/3TzBXdV" class="sidebar-submenu-title">
+                    <p class="product-name">Cachorros</p>
+                    <data value="46" class="stock" title="Available Stock">46</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="https://amzn.to/3TzBYhZ" class="sidebar-submenu-title">
+                    <p class="product-name">Gatos</p>
+                    <data value="73" class="stock" title="Available Stock">73</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="https://amzn.to/46PT9i7" class="sidebar-submenu-title">
+                    <p class="product-name">Aves e Pássaros</p>
+                    <data value="61" class="stock" title="Available Stock">61</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="https://amzn.to/3t2GD10" class="sidebar-submenu-title">
+                    <p class="product-name">Peixes</p>
+                    <data value="61" class="stock" title="Available Stock">61</data>
+                  </a>
+                </li>
+
+              </ul>
+
+            </li> <!--FIM -->
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">Melhores do momento</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="https://amzn.to/3NjN8TY" class="showcase-img-box">
+                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://amzn.to/3NjN8TY">
+                      <h4 class="showcase-title">Echo Pop</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <a href="https://amzn.to/3NjN8TY">
+                        <p class="price">Compre já</p>
+                      </a>
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="https://amzn.to/3t9wUWC" class="showcase-img-box">
+                    <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://amzn.to/3t9wUWC">
+                      <h4 class="showcase-title">Monitor Gamer LG UltraGear</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <a href="https://amzn.to/3t9wUWC">
+                        <p class="price">Compre já</p>
+                      </a>
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="https://amzn.to/3Gwpwrt" class="showcase-img-box">
+                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://amzn.to/3Gwpwrt">
+                      <h4 class="showcase-title"> ASUS Vivobook, AMD RYZEN 5</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <a href="https://amzn.to/3Gwpwrt">
+                        <p class="price">Compre já</p>
+                      </a>
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="https://amzn.to/474eNzr" class="showcase-img-box">
+                    <img src="./assets/images/products/4.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="https://amzn.to/474eNzr">
+                      <h4 class="showcase-title">iPhone 13 (128 GB)</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <a href="https://amzn.to/474eNzr">
+                        <p class="price">Compre já</p>
+                      </a>
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">Melhores avaliados | Passa pro lado ➜ </h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="https://amzn.to/489s22s" class="showcase-img-box">
+                      <img src="./assets/images/products/clothes-1.jpg" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="https://amzn.to/489s22s">
+                        <h4 class="showcase-title">VAIO FE15, Intel® Core i5</h4>
+                      </a>
+
+                      <a href="https://amzn.to/489s22s" class="showcase-category">Notebook</a>
+
+                      <div class="price-box">
+                        <a href="https://amzn.to/489s22s">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="https://amzn.to/489iYKW" class="showcase-img-box">
+                      <img src="assets/images/products/monitorgrid.jpg" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="https://amzn.to/489iYKW">
+                        <h4 class="showcase-title">Monitor Gamer AOC Hero 24</h4>
+                      </a>
+                  
+                      <a href="https://amzn.to/489iYKW" class="showcase-category">Monitor</a>
+                  
+                      <div class="price-box">
+                        <a href="https://amzn.to/489iYKW">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="https://amzn.to/3uPGWfZ" class="showcase-img-box">
+                      <img src="./assets/images/products/pcgaminggrid.jpg" alt="black floral wrap midi skirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="https://amzn.to/3uPGWfZ">
+                        <h4 class="showcase-title">ITX Arena, Ryzen 5 5600G</h4>
+                      </a>
+                  
+                      <a href="https://amzn.to/3uPGWfZ" class="showcase-category">Computador</a>
+                  
+                      <div class="price-box">
+                        <a href="https://amzn.to/3uPGWfZ">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="https://amzn.to/3RHYTq1" class="showcase-img-box">
+                      <img src="./assets/images/products/headsetgrid.jpg" alt="pure garment dyed cotton shirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="https://amzn.to/3RHYTq1">
+                        <h4 class="showcase-title">Havit HV-H2002d Gamer, com Microfone, Falante 53mm, </h4>
+                      </a>
+                  
+                      <a href="https://amzn.to/3RHYTq1" class="showcase-category">HEADSET</a>
+                  
+                      <div class="price-box">
+                        <a href="https://amzn.to/3RHYTq1">
+                          <p class="price">VER MAIS</p>
+                        </a>
+            
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="https://amzn.to/3uQl8Ru" class="showcase-img-box">
+                      <img src="./assets/images/products/mousegrid.jpg" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="https://amzn.to/3uQl8Ru">
+                        <h4 class="showcase-title">Logitech G203 LIGHTSYNC RGB</h4>
+                      </a>
+                
+                      <a href="https://amzn.to/3uQl8Ru" class="showcase-category">Mouse</a>
+                
+                      <div class="price-box">
+                        <a href="https://amzn.to/3uQl8Ru">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="https://amzn.to/3RuOqOi" class="showcase-img-box">
+                      <img src="./assets/images/products/tecladogrid.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="https://amzn.to/3RuOqOi">
+                        <h4 class="showcase-title">Redragon TECLADO MECANICO GAMER FIZZ RGB</h4>
+                      </a>
+                
+                      <a href="https://amzn.to/3RuOqOi" class="showcase-category">Teclado</a>
+                
+                      <div class="price-box">
+                        <a href="https://amzn.to/3RuOqOi">
+                          <p class="price">VER MAIS </p>
+                        </a>
+                        
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="https://amzn.to/3sYYi9T" class="showcase-img-box">
+                      <img src="./assets/images/products/impressoragrid.jpg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="https://amzn.to/3sYYi9T">
+                        <h4 class="showcase-title">Epson EcoTank L3250 - Multifuncional</h4>
+                      </a>
+                
+                      <a href="https://amzn.to/3sYYi9T" class="showcase-category">Impressora</a>
+                
+                      <div class="price-box">
+                        <a href="https://amzn.to/3sYYi9T">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="https://amzn.to/47HCxdA" class="showcase-img-box">
+                      <img src="./assets/images/products/tabletgrid.jpg" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="https://amzn.to/47HCxdA">
+                        <h4 class="showcase-title">GALAXY TAB A7 LITE WIFI 8.7 </h4>
+                      </a>
+                
+                      <a href="https://amzn.to/47HCxdA" class="showcase-category">Tablet</a>
+                
+                      <div class="price-box">
+                        <a href="https://amzn.to/47HCxdA">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+
+                      
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Para a sua casa | Passa pro lado ➜</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3GwGSUS" class="showcase-img-box">
+                      <img src="./assets/images/products/tvgrid.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3GwGSUS">
+                        <h4 class="showcase-title">Smart TV LED 50" 4K UHD TCL 50P635</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3GwGSUS" class="showcase-category">TV</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3GwGSUS">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/489tSAo" class="showcase-img-box">
+                      <img src="./assets/images/products/airfryergrid.jpg" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/489tSAo">
+                        <h4 class="showcase-title">Fritadeira Sem Óleo Air Fryer 3,5L</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/489tSAo" class="showcase-category">Air Fryer</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/489tSAo">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3RykOzC" class="showcase-img-box">
+                      <img src="./assets/images/products/liquidificadorgrid.jpg" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3RykOzC">
+                        <h4 class="showcase-title">Liquidificador Turbo, Mondial, Vermelho/Inox</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3RykOzC" class="showcase-category">Liquidificador</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3RykOzC">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3NjALXQ" class="showcase-img-box">
+                      <img src="./assets/images/products/sanduicheiragrid.jpg" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3NjALXQ">
+                        <h4 class="showcase-title">Sanduicheira Minigrill Gourmet 220V com 750W</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3NjALXQ" class="showcase-category">Sanduicheira</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3NjALXQ">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/46NzEXA" class="showcase-img-box">
+                      <img src="./assets/images/products/geladeiragrid.jpg" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/46NzEXA">
+                        <h4 class="showcase-title">Geladeira Frost Free Brastemp Inverse</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/46NzEXA" class="showcase-category">Geladeira</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/46NzEXA">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/4a4JVS5" class="showcase-img-box">
+                      <img src="./assets/images/products/fogaogrid.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/4a4JVS5">
+                        <h4 class="showcase-title">Fogão Atlas 4 Bocas preto Mônaco</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/4a4JVS5" class="showcase-category">Fogão</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/4a4JVS5">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3T91bPY" class="showcase-img-box">
+                      <img src="./assets/images/products/aspiradorpogrid.jpg" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3T91bPY">
+                        <h4 class="showcase-title">Aspirador de Pó Turbo Cycle, Mondial</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3T91bPY" class="showcase-category">Aspirador</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3T91bPY">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3Njhx4D" class="showcase-img-box">
+                      <img src="./assets/images/products/microondasgrid.jpg" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3Njhx4D">
+                        <h4 class="showcase-title">Forno Micro-ondas 20L Preto Midea</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3Njhx4D" class="showcase-category">Microondas</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3Njhx4D">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top vendas | Passa pro lado ➜</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/483f6Lq" class="showcase-img-box">
+                      <img src="./assets/images/products/fechaduragrid.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/483f6Lq">
+                        <h4 class="showcase-title">Fechadura Digital de Sobrepor Touch Screen</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/483f6Lq" class="showcase-category">Fechadura</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/483f6Lq">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3GxJ7rh" class="showcase-img-box">
+                      <img src="./assets/images/products/chuveirogrid.jpg" alt="silver deer heart necklace" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3GxJ7rh">
+                        <h4 class="showcase-title">LORENZETTI Loren Shower - Chuveiro Eletrônico</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3GxJ7rh" class="showcase-category">Chuveiro</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3GxJ7rh">
+                          <p class="price">VER MAIS</p>
+                        </a>
+
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/46VsobT" class="showcase-img-box">
+                      <img src="./assets/images/products/aspiradordepoliquidos.jpg" alt="titan 100 ml womens perfume" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/46VsobT">
+                        <h4 class="showcase-title">Titan 100 Ml Womens Perfume</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/46VsobT" class="showcase-category">Aspirador de pó</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/46VsobT">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/485KfOu" class="showcase-img-box">
+                      <img src="./assets/images/products/ventiladordourado.jpg" alt="men's leather reversible belt" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/485KfOu">
+                        <h4 class="showcase-title">Ventilador Mallory Coluna Air Timer TS</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/485KfOu" class="showcase-category">Ventilador</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/485KfOu">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3RbacW5" class="showcase-img-box">
+                      <img src="./assets/images/products/creatinamaxtitanium.jpg" alt="platinum zircon classic ring" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3RbacW5">
+                        <h4 class="showcase-title">Max Titanium Creatina - 300g</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3RbacW5" class="showcase-category">Suplemento</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3RbacW5">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+                       
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3GBcs4c" class="showcase-img-box">
+                      <img src="./assets/images/products/g-tech.jpg" alt="smart watche vital plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3GBcs4c">
+                        <h4 class="showcase-title">G-Tech BSP11, Aparelho de Pressão</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3GBcs4c" class="showcase-category">Saúde</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3GBcs4c">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+                       
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/3uWB70c" class="showcase-img-box">
+                      <img src="./assets/images/products/carrinhosgrid.jpg" alt="shampoo conditioner packs" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/3uWB70c">
+                        <h4 class="showcase-title">Pacote 5 Carros Sortidos, Hot Wheels, Mattel </h4>
+                      </a>
+            
+                      <a href="https://amzn.to/3uWB70c" class="showcase-category">Brinquedos</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/3uWB70c">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="https://amzn.to/4afdhNI" class="showcase-img-box">
+                      <img src="./assets/images/products/pilhasgrid.jpg" alt="rose gold peacock earrings" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="https://amzn.to/4afdhNI">
+                        <h4 class="showcase-title">Pilha Alcalina AA Pequena DURACELL Com 16 Unidades</h4>
+                      </a>
+            
+                      <a href="https://amzn.to/4afdhNI" class="showcase-category">Pilhas</a>
+            
+                      <div class="price-box">
+                        <a href="https://amzn.to/4afdhNI">
+                          <p class="price">VER MAIS</p>
+                        </a>
+                        
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Ofertas do dia ➜</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/intelkitupgrade.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <!--<ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>-->
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Kit Upgrade Intel i5-8400 + H310CM + 8GB RAM DDR4</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Placa Mãe: H310CM
+                      Processador: i5-8400
+                      Cooler: SIM
+                      Memória: 8GB RAM DDR4
+                    </p>
+
+                    <div class="price-box">
+                      <a href="https://amzn.to/41lzllx">
+                        <p class="price">PROMOÇÃO</p>
+                      </a>
+                      
+                    </div>
+                    <a href="https://amzn.to/41lzllx">
+                      <button class="add-cart-btn">VER MAIS</button>
+                    </a>
+                    
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          Vendidos: <b>+100</b>
+                        </p>
+
+                        <p>
+                          Avaliação: <b>4,5⭐</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        NÃO PERCA A PROMOÇÃO, É POR TEMPO LIMITADO
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">10x</p>
+
+                          <p class="display-text">no 💳</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/samsunguhdmonitor.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Monitor UHD Samsung  32", 4K, HDMI, Display Port, Freesync, Preto, Série UJ59</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      O UHD Upscaling da Samsung melhora conteúdo de baixa resolução para quase 4K. O recurso Picture-by-Picture permite visualizar duas fontes simultaneamente, enquanto o design elegante do monitor UJ59.
+                    </p>
+              
+                    <div class="price-box">
+                      <a href="https://amzn.to/3Gzc2uV">
+                        <p class="price">PROMOÇÃO</p>
+                      </a>
+                      
+                    </div>
+                    <a href="https://amzn.to/3Gzc2uV">
+                      <button class="add-cart-btn">VER MAIS</button>
+                    </a>
+                    
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          Vendidos: <b>+100</b>
+                        </p>
+
+                        <p>
+                          Avaliação: <b>4,5⭐</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        NÃO PERCA A PROMOÇÃO, É POR TEMPO LIMITADO
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">10x</p>
+
+                          <p class="display-text">no 💳</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                        
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">Lançamentos</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/firestick4kgrid.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./assets/images/products/firestickstreaminggrid.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <a href="https://pt.wikipedia.org/wiki/Amazon_Fire_TV">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/61vZEuD2kwL._AC_SL1500_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/41giqAN">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/48b2pi2">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="https://amzn.to/46Rk5hw" class="showcase-category">Novo Fire TV Stick 4K | Streaming com Dolby Vision/Atmos | 12x💳</a>
+
+                  <a href="https://amzn.to/46Rk5hw">
+                    <h3 class="showcase-title">Marca: Amazon
+                    </h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    
+                  </div>
+
+                  <div class="price-box">
+                    <a href="https://amzn.to/46Rk5hw">
+                      <p class="price">VEJA MAIS</p>
+                    </a>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/xiaomipocof51.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/xiaomipocof52.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">NOVO</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://www.tudocelular.com/Poco/fichas-tecnicas/n8654/Poco-F5.html">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/61EO+H3fP-L._AC_SL1000_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3GA1j3r">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3R6OZMM">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/48aKYxM" class="showcase-category">Xiaomi Poco F5 5G 8GB+256GB Versao Global,Preto | 12x💳</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/48aKYxM" class="showcase-title">Marca: Xiaomi</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/48aKYxM">
+                      <p class="price">VEJA MAIS</p>
+                    </a>
+
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/xiaomimiband8.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/xiaomimyband8monitoring.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://canaltech.com.br/smartwatch/muito-barato-xiaomi-mi-band-8-active-global-em-preco-imperdivel-271501/">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/51W7hGYxPOL._AC_SL1152_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/47LupsD">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3uSKz4X">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/48aNJiC" class="showcase-category">Xiaomi Mi Band 8</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/48aNJiC" class="showcase-title">Marca: Xiaomi</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/48aNJiC">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/fonedeouvidosemfio.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/fone" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">Novo</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://amzn.to/46S6AOD">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/514qXVZOfsL._AC_SL1179_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/4anMNto">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/41exlvg">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/3NkZuuS" class="showcase-category">Fone de Ouvido Bluetooth Sem Fio Wireless 5.1 Duplo Com Visor</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/3NkZuuS" class="showcase-title">Marca: genérica</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/3NkZuuS">
+                      <p class="price">VEJA MAIS</p>
+                    </a>
+                    
+
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/cameradeseguranca.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/cameraalerta.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3Rxfdd0">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/51ySFLlI-aL._AC_SL1500_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3Ri0eCt">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/47Pyfkj">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/3Rxfdd0" class="showcase-category">Câmera IP Sem Fio de Segurança Externa HD 3MP</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/3Rxfdd0" class="showcase-title">Marca: Colbeu</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/3Rxfdd0">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/tabletlenovo.jpg" alt="Pocket Watch Leather Pouch" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/tabletlenovohover.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">NOVO</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://www.tudocelular.com/Lenovo/fichas-tecnicas/n8397/Lenovo-Tab-M9.html">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/61dxj9a7NHL._AC_SL1500_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/46R6GG0">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/46S8cb9">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/3NlQBBn" class="showcase-category">Tablet Lenovo Tab M9 4GB RAM 64GB Tela 9 Polegadas</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/3NlQBBn" class="showcase-title">Marca: Lenovo</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/3NlQBBn">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                   
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/cabousbc.jpg" alt="Smart watche Vital Plus" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/cabousbespecificaçoes.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://amzn.to/47J7Kx0">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/5166ogGvNYL._AC_SL1500_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3Gw79D3">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3RyiU1R">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/47J7Kx0" class="showcase-category">Cabo Usb-C-Lightning + Fonte Carregador 25W Turbo Compatível iPhone X Xr SE 11 12 13 14 Premium LAGUS IMP.</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/47J7Kx0" class="showcase-title">Marca: LAGSUS IMP.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/47J7Kx0">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/mesadigitalizadora.jpg" alt="Womens Party Wear Shoes" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/mesadigitalizadoraescrevendo.jpg" alt="Womens Party Wear Shoes" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">TOP+</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3t8Ha1e">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/71+xzUu92ZL._AC_SL1500_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/4acsmiH">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/46OlyFm">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/3Thu2kZ" class="showcase-category">Wacom One CTL472 - Mesa Digitalizadora, Preto / Vermelho</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/3Thu2kZ" class="showcase-title">Marca: Wacom</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/3Thu2kZ">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/caixadesom.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/caixadesomespecificacoes.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3t0W35T">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/71OoV05kdyL._AC_SL1200_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/41hkeJG">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/488ufvb">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/3RzFbfQ" class="showcase-category">Caixa De Som Bluetooth Essential Sound Go i2GO 10W RMS Resistente à Água, Preto</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/3RzFbfQ" class="showcase-title">Marca: I2GO</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/3RzFbfQ">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                   
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/kitmaletaferra.jpg" alt="Trekking & Running Shoes - black" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/kitferramenta2.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">PROMO</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3GAIoFC">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/61ZmjmMLsRL._AC_SL1000_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3GAFKQ9">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/46QzzlT">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/3RdTrti" class="showcase-category">Sparta Maleta de ferramentas kit com 129 peças</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/3RdTrti" class="showcase-title">Marca: Sparta</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/3RdTrti">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/livromaldicaodovddamor.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/livromaldicaovddamor2.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://pt.wikipedia.org/wiki/Stephanie_Garber">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/91ud903lO3L._SL1500_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3TianBA">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/41cA0Ws">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/3Rz2JRW" class="showcase-category">A maldição do verdadeiro amor (Sucesso no TikTok) </a>
+              
+                  <h3>
+                    <a href="https://amzn.to/3Rz2JRW" class="showcase-title">por Stephanie Garber</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/3Rz2JRW">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/creatina300g.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/creatinalaudo.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">TOP5</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3t8Kg5o">
+                        <i style="color: #727272;" class="bi bi-search-heart-fill"></i>
+                       
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://m.media-amazon.com/images/I/61ab639aDML._AC_SL1000_.jpg">
+                        <i style="color: #727272;" class="bi bi-eye-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/3t9blp0">
+                        <i style="color: #727272;" class="bi bi-gift-fill"></i>
+                      </a>
+                      
+                    </button>
+
+                    <button class="btn-action">
+                      <a href="https://amzn.to/41dkLfY">
+                        <i style="color: #727272;" class="bi bi-star-fill"></i>
+                      </a>
+                     
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="https://amzn.to/46LLlhb" class="showcase-category">Integralmedica Creatina 300g Monohidratada 100% Pura</a>
+              
+                  <h3>
+                    <a href="https://amzn.to/46LLlhb" class="showcase-title">Marca: Integralmédica</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <a href="https://amzn.to/46LLlhb">
+                      <p class="price">VER MAIS</p>
+                    </a>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">Administrador</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/logoadm.png" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Natanael Amaral</p>
+
+              <p class="testimonial-title">Designer Digital/Web</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Os melhores produtos você encontra aqui. Com um visual simples e que tem tudo que você precisa.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/cta-banner.png" alt="summer collection" class="cta-banner">
+
+            <a href="https://amzn.to/3tbJbK5" class="cta-content">
+
+              <p class="discount">VISH...</p>
+
+              <h2 class="cta-title">NATAL CHEGANDO E VOCÊ NÃO SABE</h2>
+
+              <p class="cta-text">o que presentear? </p>
+
+               <button class="cta-btn">CLIQUE AQUI</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">DICAS</h2>
+
+            <div class="service-container">
+
+              <a href="https://amzn.to/3RiwJjX" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Navegue pelo site</h3>
+                  <p class="service-desc">aqui tem de tudo</p>
+
+                </div>
+
+              </a>
+
+              <a href="https://amzn.to/3uPsFQD" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title"> Decole com as </h3>
+                  <p class="service-desc"> compras, A até Z</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="https://amzn.to/3ToKVu2" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Suporte de</h3>
+                  <p class="service-desc">qualidade</p>
+              
+                </div>
+              
+              </a>
+
+              
+              <a href="" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+                  
+                  <h3 class="service-title">Compartilhe para</h3>
+                  <p class="service-desc">todo mundo!</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="https://amzn.to/3uOAcz8" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Fique de olho</h3>
+                  <p class="service-desc">nas promos também</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+   
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Tem de tudo, até mesmo aqui!</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">TOP 1 :</h3>
+
+          <a href="https://amzn.to/3RiNDyy" class="footer-category-link">Ofertas de produtos com 4+ estrelas  </a> 
+          <a href="https://amzn.to/3RzbGKZ" class="footer-category-link">Presentes por faixa de preço</a> 
+          <a href="https://amzn.to/3RDfhIk" class="footer-category-link">Natal de A até Z</a>
+          <a href="https://amzn.to/3Tde77t" class="footer-category-link">Conheça a Alexa</a>
+
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Top 2 :</h3>
+        
+          <a href="https://amzn.to/3sZokd6" class="footer-category-link">Mais Vendidos em Computadores</a>
+          <a href="https://amzn.to/41hdDPr" class="footer-category-link">Mais amados no Amazon Quase Novo</a>
+          <a href="https://amzn.to/46M21VP" class="footer-category-link">Presentes em Beleza e Cuidados Pessoais</a>
+          <a href="https://amzn.to/46QVMQw" class="footer-category-link">eBooks mais vendidos</a>
+          
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">TOP 3 :</h3>
+        
+          <a href="https://amzn.to/4aem1DG" class="footer-category-link">Frete GRÁTIS no seu primeiro pedido em Livros</a>
+          <a href="https://amzn.to/3uRCIo7" class="footer-category-link">Tudo em Áudio e Som</a>
+          <a href="https://amzn.to/3GB9rkg" class="footer-category-link">Presentes em Bebidas Alcoólicas.</a>
+          <a href="https://amzn.to/3uPpR63" class="footer-category-link">Bebidas para comemorar até R$100</a>
+         
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">TOP 4 :</h3>
+        
+          <a href="https://amzn.to/3NjdYf1" class="footer-category-link">Presentes em Casa e Cozinha</a>
+          <a href="https://amzn.to/4aczSdy" class="footer-category-link">Presentes em Livros e eBooks</a>
+          <a href="https://amzn.to/3Nl0AXP" class="footer-category-link">Descubra o Amazon Quase Novo</a>
+          <a href="https://amzn.to/3RA58Lh" class="footer-category-link">Ative seu modo gamer</a>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Categorias populares</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/48do8pv" class="footer-nav-link">Mais vendidos</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3RziSXF" class="footer-nav-link">Cuidados Pessoais e da Casa
+            </a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3RxoZMa" class="footer-nav-link">Eletrônicos e Tecnologia
+            </a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3RzC7At" class="footer-nav-link">Ideias de presente</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3tgtOzZ" class="footer-nav-link">Brinquedos e Jogos</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Produtos</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3uVek5e" class="footer-nav-link">Cabelo</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3RvI2q5" class="footer-nav-link">Skin Care</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/47PH3a7" class="footer-nav-link">Bebês</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3NjKEos" class="footer-nav-link">Casa</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/46PvcHQ" class="footer-nav-link">Ferramentas</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Games</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/46PPGjB" class="footer-nav-link">XboxSeries X e S</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3RAInIg" class="footer-nav-link">Playstation 5</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3RingJm" class="footer-nav-link">Nintendo Switch</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3Red0le" class="footer-nav-link">Xbox One</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/46PKaxo" class="footer-nav-link">Consoles Antigos</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3uTwJiM" class="footer-nav-link">Playstation 4</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amzn.to/3ToJ1cS" class="footer-nav-link">Serviços On-line de Jogos</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">AMARAL DZN</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://amaraldzn.github.io/" class="footer-nav-link">Site</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://www.instagram.com/amaraldsn/" class="footer-nav-link">Instagram</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://belo.my.canva.site/amaraldesigner" class="footer-nav-link">Website</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://drive.google.com/drive/folders/1AZyuSJOhcYTnRXsUkMEnCSPOBwCokp88?usp=sharing" class="footer-nav-link">Portfólio</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdap8ZQS5W05uB8S9uN7YqeNe5CUWRL7e5vErNDgFylFQfehw/viewform" class="footer-nav-link">Formulário</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contatos</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+
+            <address class="content">
+              América do Sul, Brazil -
+              Paraíba, João Pessoa 
+              
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+5583982018994" class="footer-nav-link">(83) 98201-8994</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:dznamaral@gmail.com" class="footer-nav-link">dznamaral@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Siga-me</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="https://m.facebook.com/p/Amaral-Dzn-100094559876343/?wtsid=rdr_0bTjHfDEVjocsDTMl&_rdr" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://twitter.com/AmaralDzn" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.linkedin.com/in/natanael-amaral-a8661b264/" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.instagram.com/amaraldsn/" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Amaral Designer & Anon</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- logo SUPERIOR MODO LIGHT/DARK -->
+  <script>
+    // Função para verificar e ajustar o atributo src com base no modo claro/escuro
+    function adjustLogo() {
+      var logo = document.getElementById("logo");
+      if (document.body.classList.contains("dark-theme")) {
+        // Se o modo escuro estiver ativado, altera o src para a logo escura
+        logo.src = "assets/images/logo/amaraldsnlogopreto.png";
+      } else {
+        // Se o modo claro estiver ativado, altera o src para a logo clara
+        logo.src = "assets/images/logo/amaraldsnlogo.png";
+      }
+    }
+  
+    // Chamando a função ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+      adjustLogo();
+    });
+  
+    // Lógica de troca ao clicar na logo
+    document.getElementById("logo").onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      adjustLogo(); // Chama a função para ajustar o atributo src
+    }
+  </script>
+
+<!-- DESKTOP MODO LIGHT/DARK -->
+<script>
+    var iconDesktop = document.getElementById("icon");
+
+    iconDesktop.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        iconDesktop.src = "assets/images/sun.svg";
+      } else {
+        iconDesktop.src = "assets/images/moon.svg";
+      }
+    }
+    
+  function adjustLogo() {
+    var logo = document.getElementById("logo");
+    if (document.body.classList.contains("dark-theme")) {
+      // Se o modo escuro estiver ativado, altera o src para a logo escura
+      logo.src = "assets/images/logo/amaraldsnlogopreto.png";
+    } else {
+      // Se o modo claro estiver ativado, altera o src para a logo clara
+      logo.src = "assets/images/logo/amaraldsnlogo.png";
+    }
+  }
+
+  // Função para alternar entre os modos light/dark e ajustar a logo
+  function toggleDarkMode(iconElement) {
+    document.body.classList.toggle("dark-theme");
+    adjustLogo();
+    // Atualizar o ícone conforme o modo
+    if (document.body.classList.contains("dark-theme")) {
+      iconElement.src = "assets/images/sun.svg";
+    } else {
+      iconElement.src = "assets/images/moon.svg";
+    }
+  }
+
+  // Adicionando eventos de clique para o botão desktop
+  var iconDesktop = document.getElementById("icon");
+  iconDesktop.onclick = function() {
+    toggleDarkMode(iconDesktop);
+    // Adicione aqui lógica adicional se necessário
+  }
+
+  // Adicionando eventos de clique para o botão mobile
+  var iconMobile = document.getElementById("iconmobile");
+  iconMobile.onclick = function() {
+    toggleDarkMode(iconMobile);
+    // Adicione aqui lógica adicional se necessário
+  }
+
+//FECHAMENTO DE DESKTOP LIGHT DARK
+</script> 
+
+<script>
+    var iconMobile = document.getElementById("iconmobile");
+
+    iconMobile.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        iconMobile.src = "assets/images/sunmobile.svg";
+      } else {
+        iconMobile.src = "assets/images/moonmobile.svg";
+      }
+    }
+
+    function adjustLogo() {
+      var logo = document.getElementById("logo");
+      if (document.body.classList.contains("dark-theme")) {
+        // Se o modo escuro estiver ativado, altera o src para a logo escura
+        logo.src = "assets/images/logo/amaraldsnlogopreto.png";
+      } else {
+        // Se o modo claro estiver ativado, altera o src para a logo clara
+        logo.src = "assets/images/logo/amaraldsnlogo.png";
+     }
+   }
+
+  // Função para alternar entre os modos light/dark e ajustar a logo
+  function toggleDarkMode(iconElement) {
+    document.body.classList.toggle("dark-theme");
+    adjustLogo();
+    // Atualizar o ícone conforme o modo
+    if (document.body.classList.contains("dark-theme")) {
+      iconElement.src = "assets/images/sun.svg";
+    } else {
+      iconElement.src = "assets/images/moon.svg";
+    }
+  }
+  //Adicionando eventos de clique para o botão desktop
+  var iconDesktop = document.getElementById("icon");
+  iconDesktop.onclick = function() {
+    toggleDarkMode(iconDesktop);
+    // Adicione aqui lógica adicional se necessário
+  }
+
+  // Adicionando eventos de clique para o botão mobile
+  var iconMobile = document.getElementById("iconmobile");
+  iconMobile.onclick = function() {
+    toggleDarkMode(iconMobile);
+    // Adicione aqui lógica adicional se necessário
+  }
+
+</script>
+
+  <!--
+    - custom js link
+  -->
+
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
